@@ -1,5 +1,26 @@
 {
-  "nav": [],
+  "nav": [
+    {
+      "linkText": "energy",
+      "url": "energy.html"
+    },
+    {
+      "linkText": "water",
+      "url": "/water.html"
+    },
+    {
+      "linkText": "land",
+      "url": "land.html"
+    },
+    {
+      "linkText": "team",
+      "url": "team.html"
+    },
+    {
+      "linkText": "Get Involved",
+      "url": "/form"
+    }
+  ],
   "home": [],
   "goals": [],
   "form": []

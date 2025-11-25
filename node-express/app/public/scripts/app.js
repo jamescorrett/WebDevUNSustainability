@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+//navbar
+    
+
 const page = document.body.dataset.page; 
 
 // this shows its the homepage, use a different more global
