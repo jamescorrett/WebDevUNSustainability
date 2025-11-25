@@ -1,0 +1,34 @@
+
+
+/*CSS for the home page structure*/
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+nav ul li {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 24%;
+    align-items: center;
+}
+nav ul li a {
+    text-align: center;
+} 
+.top {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.three {
+    display: flex;
+    justify-content: space-around;
+}
+.rows {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    
+}
