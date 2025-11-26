@@ -1,6 +1,4 @@
-
-
-/*CSS for the home page structure*/
+/*CSS for the navbar*/
 nav ul {
     display: flex;
     list-style: none;
@@ -22,6 +20,9 @@ nav ul li a {
     justify-content: center;
     align-items: center;
 }
+
+/*CSS for the home page structure*/
+
 .top {
     flex-wrap: wrap;
     display: flex;

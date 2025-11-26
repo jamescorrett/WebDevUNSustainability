@@ -1,43 +1,33 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const localJsonFile = "data.json"
-    fetch(localJsonFile)
-    .then(response => response.json())
-    .then(responseData => {
-        console.log(responseData)
-        for (item of responseData) {
-        const navUl = document.createElement("ul")
-        const navList = document.createElement("li")
-        const navAnchor = document.createElement("a")
-        
-        navAnchor.textContent = item.nav.linkText
-        navItems.appendChild(navAnchor)
+  const navItems = document.getElementById("navBar");
+  const navUl = document.createElement("ul");
+  navItems.appendChild(navUl);
 
-        
-        
-        }
+  fetch("data.json")
+    .then((response) => response.json())
+    .then((responseData) => {
+      // global navigation
+      for (item of responseData.nav) {
+        const navList = document.createElement("li");
+        const navAnchor = document.createElement("a");
 
+        navAnchor.href = item.url;
+        navAnchor.textContent = item.linkText;
 
-    })
+        navList.appendChild(navAnchor);
+        navUl.appendChild(navList);
+      }
 
-//navbar
-const navItems = document.getElementsByName('nav')
+      const page = document.body.dataset.page;
 
+      // content specific for pages (body page-data ="pagename")
+      if (page === "home") {
+      }
 
+      if (page === "goals") {
+      }
 
-const page = document.body.dataset.page; 
-
-// this shows its the homepage, use a different more global
-// variable for the goals pages as they will have the same JS
-if (page === "home") {
-    console.log('Page loads correctly')
-
-    //content for home page
-
-}
-
-
-
-
-
-    
-}) 
+      if (page === "form") {
+      }
+    });
+});
