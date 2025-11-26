@@ -18,10 +18,22 @@
     },
     {
       "linkText": "Get Involved",
-      "url": "/form"
+      "url": "join.html"
     }
   ],
-  "home": [],
+  "home": {
+    "video": [
+      {
+        "title": "welcome",
+        "image": "car.png"
+      }
+    ],
+    "goals": [
+      { "title": "energy", "image": "/assets/placeholder.png" },
+      { "title": "water", "image": "/assets/placeholder.png" },
+      { "title": "land", "image": "/assets/placeholder.png" }
+    ]
+  },
   "goals": [],
   "form": []
 }

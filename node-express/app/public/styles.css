@@ -23,20 +23,20 @@ nav ul li a {
 
 /*CSS for the home page structure*/
 
-.top {
+.video {
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
     width: 100%;
 }
-.three {
+.goals {
     display: flex;
     justify-content: space-around;
 }
 .rows {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 100%;
-    justify-content: center;
+    align-items: center;
     
 }
