@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
+  let currentPath = window.location.pathname.split("/").pop();
+  if (currentPath === "") {
+    currentPath = "index.html";
+  }
   const navItems = document.getElementById("navBar");
   const navUl = document.createElement("ul");
   navItems.appendChild(navUl);
@@ -13,6 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         navAnchor.href = item.url;
         navAnchor.textContent = item.linkText;
+
+        if (item.url === currentPath) {
+          navAnchor.classList.add("active");
+        }
 
         navList.appendChild(navAnchor);
         navUl.appendChild(navList);
@@ -32,13 +40,16 @@ document.addEventListener("DOMContentLoaded", () => {
         const goalsSection = document.getElementById("goals");
 
         for (item of responseData.home.goals) {
+          const imageAnchor = document.createElement("a");
           const goalsImage = document.createElement("img");
           const goalsText = document.createElement("h3");
 
           goalsImage.src = item.image;
+          imageAnchor.href = item.url;
           goalsText.textContent = item.title;
+          imageAnchor.appendChild(goalsImage);
 
-          goalsSection.append(goalsText, goalsImage);
+          goalsSection.append(goalsText, imageAnchor);
         }
       }
 

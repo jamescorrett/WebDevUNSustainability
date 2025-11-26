@@ -6,7 +6,7 @@
     },
     {
       "linkText": "water",
-      "url": "/water.html"
+      "url": "water.html"
     },
     {
       "linkText": "land",
@@ -29,9 +29,28 @@
       }
     ],
     "goals": [
-      { "title": "energy", "image": "/assets/placeholder.png" },
-      { "title": "water", "image": "/assets/placeholder.png" },
-      { "title": "land", "image": "/assets/placeholder.png" }
+      {
+        "title": "energy",
+        "image": "/assets/placeholder.png",
+        "url": "energy.html"
+      },
+      {
+        "title": "water",
+        "image": "/assets/placeholder.png",
+        "url": "water.html"
+      },
+      {
+        "title": "land",
+        "image": "/assets/placeholder.png",
+        "url": "land.html"
+      }
+    ],
+    "rowPages": [
+      {
+        "title": "meet the team",
+        "image": "/assets/placeholder.png"
+      },
+      {}
     ]
   },
   "goals": [],
