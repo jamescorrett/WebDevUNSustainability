@@ -40,6 +40,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const goalsSection = document.getElementById("goals");
 
         for (item of responseData.home.goals) {
+          const goalsWrapper = document.createElement("div");
+          goalsWrapper.classList.add("goalsWrapper");
+
           const imageAnchor = document.createElement("a");
           const goalsImage = document.createElement("img");
           const goalsText = document.createElement("h3");
@@ -47,9 +50,11 @@ document.addEventListener("DOMContentLoaded", () => {
           goalsImage.src = item.image;
           imageAnchor.href = item.url;
           goalsText.textContent = item.title;
-          imageAnchor.appendChild(goalsImage);
+          imageAnchor.append(goalsText, goalsImage);
 
-          goalsSection.append(goalsText, imageAnchor);
+          goalsWrapper.append(imageAnchor);
+
+          goalsSection.append(goalsWrapper);
         }
       }
 
