@@ -60,7 +60,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (page === "goals") {
       }
-
+      if (page === "team") {
+      }
       if (page === "form") {
       }
     });
