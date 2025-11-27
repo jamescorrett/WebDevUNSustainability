@@ -31,8 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
       if (page === "home") {
         //top row
         const videoElement = document.getElementById("video");
-<<<<<<< Updated upstream
-=======
         const video = document.createElement("video");
         video.src = "/assets/fish.mp4";
         video.controls = false;
@@ -41,23 +39,19 @@ document.addEventListener("DOMContentLoaded", () => {
         video.loop = true;
         video.playsInline = true;
         videoElement.appendChild(video);
->>>>>>> Stashed changes
 
-        //video goes here
         const title = document.createElement("article");
         videoElement.appendChild(title);
         title.textContent = responseData.home.video[0].title;
 
-<<<<<<< Updated upstream
-        //2nd row
-=======
         const quote = document.createElement("p");
         quote.className = "video-quote";
         quote.textContent =
           '"the greatest threat to our planet is the belief that someone else will save it for us" - Robert Swan';
-        videoElement.appendChild(quote); //2nd row
+        videoElement.appendChild(quote);
 
->>>>>>> Stashed changes
+        //2nd row
+
         const goalsSection = document.getElementById("goals");
 
         for (item of responseData.home.goals) {
