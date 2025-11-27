@@ -32,6 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
       if (page === "home") {
         //top row
         const videoElement = document.getElementById("video");
+
+        //video goes here
         const title = document.createElement("article");
         videoElement.appendChild(title);
         title.textContent = responseData.home.video[0].title;
