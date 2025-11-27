@@ -26,9 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
         navUl.appendChild(navList);
       }
 
-      const page = document.body.dataset.page;
+      const page = document.body.dataset.page; // content specific for pages (body page-data ="pagename")
 
-      // content specific for pages (body page-data ="pagename")
       if (page === "home") {
         //top row
         const videoElement = document.getElementById("video");
@@ -51,6 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
         videoElement.appendChild(quote);
         
         //2nd row
+
         const goalsSection = document.getElementById("goals");
 
         for (item of responseData.home.goals) {
@@ -59,16 +59,39 @@ document.addEventListener("DOMContentLoaded", () => {
 
           const imageAnchor = document.createElement("a");
           const goalsImage = document.createElement("img");
-          const goalsText = document.createElement("h3");
+          const goalsText = document.createElement("h1");
+          const hoverOverlay = document.createElement("div");
+          hoverOverlay.classList.add("hoverOverlay");
 
           goalsImage.src = item.image;
           imageAnchor.href = item.url;
           goalsText.textContent = item.title;
-          imageAnchor.append(goalsText, goalsImage);
-
+          imageAnchor.append(hoverOverlay, goalsText, goalsImage);
           goalsWrapper.append(imageAnchor);
 
           goalsSection.append(goalsWrapper);
+        }
+
+        //row 3 and 4
+        const rowsSection = document.getElementById("rows");
+
+        for (item of responseData.home.rowPages) {
+          const rowsWrapper = document.createElement("div");
+          rowsWrapper.classList.add("rowsWrapper");
+
+          const imageAnchor = document.createElement("a");
+          const rowsImage = document.createElement("img");
+          const rowsText = document.createElement("h1");
+          const hoverOverlay = document.createElement("div");
+          hoverOverlay.classList.add("hoverOverlay");
+
+          rowsImage.src = item.image;
+          imageAnchor.href = item.url;
+          rowsText.textContent = item.title;
+          imageAnchor.append(hoverOverlay, rowsText, rowsImage);
+          rowsWrapper.append(imageAnchor);
+
+          rowsSection.append(rowsWrapper);
         }
       }
 
