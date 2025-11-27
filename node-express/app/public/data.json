@@ -1,6 +1,10 @@
 {
   "nav": [
     {
+      "linkText": "home",
+      "url": "index.html"
+    },
+    {
       "linkText": "energy",
       "url": "energy.html"
     },
