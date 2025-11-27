@@ -32,12 +32,24 @@ document.addEventListener("DOMContentLoaded", () => {
       if (page === "home") {
         //top row
         const videoElement = document.getElementById("video");
+        const video = document.createElement("video");
+        video.src = '/assets/fish.mp4';
+        video.controls = false;
+        video.autoplay = true;
+        video.muted = true;
+        video.loop = true;
+        video.playsInline = true;
+        videoElement.appendChild(video);
 
-        //video goes here
         const title = document.createElement("article");
         videoElement.appendChild(title);
         title.textContent = responseData.home.video[0].title;
 
+        const quote = document.createElement("p");
+        quote.className = "video-quote";
+        quote.textContent = '"the greatest threat to our planet is the belief that someone else will save it for us" - Robert Swan';
+        videoElement.appendChild(quote);
+        
         //2nd row
         const goalsSection = document.getElementById("goals");
 
