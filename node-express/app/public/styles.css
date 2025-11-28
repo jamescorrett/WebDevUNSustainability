@@ -7,7 +7,7 @@ body {
 }
 
 nav ul {
-    background-color: #8ace00;
+    background-color: dodgerblue;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -69,18 +69,19 @@ nav ul li a:hover {
 
 .goalsWrapper h1 {
     position: absolute;
-    top: 77%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: auto;
-    color: white;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 0.08em;
+    pointer-events: none;
     z-index: 10;
 }
 .goalsWrapper img {
     width: 100%;
     height: 100%;
-    /* 🛠️ FIX 1: Ensures image covers container without stretching */
+    
     object-fit: cover; 
 }
 
@@ -90,14 +91,6 @@ a h1 {
     color: black;
 }
 
-.rows {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-}
-
-
 .hoverOverlay {
     position: absolute;
     width: 100%;
@@ -105,8 +98,7 @@ a h1 {
     margin: 0;
     top: 0;
     left: 0;
-    z-index: 5;
-    
+    z-index: 5;    
     background-color: rgba(0, 0, 0, 0.4);
     opacity: 0; 
     transition: opacity 0.3s ease;
@@ -117,9 +109,15 @@ a h1 {
     opacity: 1;
 }
 
-.rowsWrapper:hover .hoverOverlay {
-    opacity: 1;
+.rows {
+    padding: 0 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
 }
+
+
+
 
 .rowsWrapper {
     position: relative;
@@ -127,8 +125,9 @@ a h1 {
     height: 200px;
     overflow: hidden;    
     margin: 0 auto;
-    padding: 0 1rem 1.5rem 1rem;
     overflow: hidden;
+    padding-bottom: 1.5rem;
+
 }
 
 .rowsWrapper a {
@@ -140,12 +139,13 @@ a h1 {
 
 .rowsWrapper h1 {
     position: absolute;
-    top: 77%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: auto;
-    color: white;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 0.08em;
+    pointer-events: none;
     z-index: 10;
 }
 .rowsWrapper img {
@@ -153,6 +153,10 @@ a h1 {
     height: 100%;
     object-fit: cover; 
     overflow: hidden;
+}
+
+.rowsWrapper:hover .hoverOverlay {
+    opacity: 1;
 }
 
 
@@ -196,4 +200,35 @@ a h1 {
     text-align: center;
     pointer-events: none;
     display: flex;
+}
+
+.faqsHidden {
+    display: block;
+}
+.faqsShow {
+    display: block;
+    transition-duration: 0.3s;
+}
+.faqsTransition {
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    max-height: 0;
+}
+.question {
+    font-weight: bold;
+}
+.answer {
+    color: dodgerblue;
+}
+
+/*Intersect observe test*/
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-100px);    
+    transition: all 1s;
+}
+.show {
+    opacity: 1;
+    transform: translateX(0);
 }
