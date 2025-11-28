@@ -74,6 +74,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (page === "goals") {
       }
+
+      if (page === "land") {
+      }
+      
       if (page === "team") {
       }
       if (page === "form") {
