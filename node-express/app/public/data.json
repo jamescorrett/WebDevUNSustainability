@@ -28,34 +28,53 @@
   "home": {
     "video": [
       {
-        "title": "welcome",
+        "title": "UN Sustainability Council",
         "image": "car.png"
       }
     ],
     "goals": [
       {
         "title": "energy",
-        "image": "/assets/placeholder.png",
+        "image": "/assets/energy.jpg",
         "url": "energy.html"
       },
       {
         "title": "water",
-        "image": "/assets/placeholder.png",
+        "image": "/assets/water.jpg",
         "url": "water.html"
       },
       {
         "title": "land",
-        "image": "/assets/placeholder.png",
+        "image": "/assets/trees.jpg",
         "url": "land.html"
       }
     ],
     "rowPages": [
       {
         "title": "meet the team",
-        "image": "/assets/placeholder.png"
+        "image": "/assets/join.jpg",
+        "url": "team.html"
       },
-      {}
-    ]
+      {
+        "title": "sign up now",
+        "image": "/assets/plants.jpg",
+        "url": "join.html"
+      }
+    ],
+    "bottom": {
+      "contents": {
+        "title": "Frequently Asked Questions",
+        "text": "Want to know more? Here are some of the frequently asked questions for the United Nations Sustainability Council",
+        "buttonText": "Expand",
+        "buttonType": "button"
+      },
+      "faqs": [
+        {
+          "question": "Why should I recycle?",
+          "answer": "because its good for the planet"
+        }
+      ]
+    }
   },
   "goals": [],
   "form": []

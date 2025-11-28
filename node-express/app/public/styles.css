@@ -2,21 +2,23 @@ body {
     font-family: 'Roboto Condensed', Arial, sans-serif;
     display: block;
     align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
-/*CSS for the navbar*/
 nav ul {
+    background-color: dodgerblue;
     display: flex;
     justify-content: center;
     width: 100%;
     margin: 0;
     padding: 0;
+    height: 100px;
 }
 
 nav ul li {
     display: flex;
     justify-content: center;
-    width: 10%;
     margin: 0;
 }
 
@@ -26,88 +28,17 @@ nav ul li a {
     align-items: center;
     text-decoration: none;
     color: black;
+    font-size: 25px;
+    width: 100%;
+    padding: 0 50px;
+    transition: background-color 0.3s ease, font-weight 0.3s ease;
 }
+
 nav ul li a.active {
     text-decoration: underline;
 }
 
-/*CSS for the home page structure*/
-
-
-.goals {
-    display: flex;
-    justify-content: space-around;
-}
-
-.goalsWrapper {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-    margin: 0.1%;
-}
-.goalsWrapper h3 {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: auto;
-}
-.goalsWrapper img {
-    width: 100%;
-    height: 100%;
-}
-a h3 {
-    text-decoration: none;
-    color: black;
-}
-
-.rows {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-}
-.video{
-    position: relative;
-    display: grid;
-    place-items: center;
-    width: 100%;
-    margin: 0 auto;
-    padding: 1.5rem 1rem;
-    box-sizing: border-box;
-}
-
-#video video {
-    width: 101.5%;
-    aspect-ratio: 8 / 3;
-    display: block;
-    object-fit: cover;
-}
-#video article {
-    position: absolute;
-    inset: 0;
-    display: grid;
-    place-items: center;
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    pointer-events: none;
-}
-#video .video-quote {
-    position: absolute;
-    bottom: 8%;
-    margin: 0;
-    padding: 0 1rem;
-    color: #ffffff;
-    font-family: 'Roboto Condensed';
-    font-size: 1.3rem;
-    font-style: italic;
-    font-weight: 500;
-    text-align: center;
-    pointer-events: none;
-    display: flex;
-
+nav ul li a:hover {
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.1);
 }

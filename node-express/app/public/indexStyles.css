@@ -1,0 +1,190 @@
+/*CSS for the home page structure*/
+
+
+.goals {
+    display: flex;
+    justify-content: space-around;
+}
+
+.goalsWrapper {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    
+    margin: 0 auto;
+    padding: 0 1rem 1.5rem 1rem;
+}
+
+.goalsWrapper a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.goalsWrapper h1 {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 0.08em;
+    pointer-events: none;
+    z-index: 10;
+}
+.goalsWrapper img {
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover; 
+}
+
+
+a h1 {
+    text-decoration: none;
+    color: black;
+}
+
+.hoverOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    z-index: 5;    
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+
+.goalsWrapper:hover .hoverOverlay {
+    opacity: 1;
+}
+
+.rows {
+    padding: 0 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+.rowsWrapper {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;    
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 1.5rem;
+
+}
+
+.rowsWrapper a {
+    display: block;
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.rowsWrapper h1 {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 0.08em;
+    pointer-events: none;
+    z-index: 10;
+}
+.rowsWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    overflow: hidden;
+}
+
+.rowsWrapper:hover .hoverOverlay {
+    opacity: 1;
+}
+
+
+.video{
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    box-sizing: border-box;
+}
+
+#video video {
+    width: 100%;
+    aspect-ratio: 8 / 3;
+    display: block;
+    object-fit: cover;
+}
+#video article {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    pointer-events: none;
+}
+#video .video-quote {
+    position: absolute;
+    bottom: 8%;
+    margin: 0;
+    padding: 0 1rem;
+    color: #fff;
+    font-family: 'Roboto Condensed';
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+    pointer-events: none;
+    display: flex;
+}
+
+.faqsHidden {
+    display: block;
+}
+.faqsShow {
+    display: block;
+    transition-duration: 0.3s;
+}
+.faqsTransition {
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    max-height: 0;
+}
+.question {
+    font-weight: bold;
+}
+.answer {
+    color: dodgerblue;
+}
+
+/*Intersect observe test*/
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-100px);    
+    transition: all 1s;
+}
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
