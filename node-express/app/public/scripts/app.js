@@ -171,10 +171,19 @@ document.addEventListener("DOMContentLoaded", () => {
         img.src = "/assets/placeholder.png";
         imgElement1.appendChild(img);
 
-        const paraElement1 = document.getElementById("box1");
-        const para = document.createElement("p");
-        paraElement1.appendChild(para);
-        para.textContent = responseData.energy.main[0].para;
+        //Appends data from json into main section textBox elements
+        const mainSection = document.getElementById("main");
+        var children = mainSection.children;
+        var x = 0;
+        for (var i = 0; i < children.length; i++) {
+          var tableChild = children[i];
+          if (tableChild.classList.contains("textBox")) {
+            const para = document.createElement("p");
+            tableChild.appendChild(para);
+            para.textContent = responseData.energy.main[0].para[x];
+            x++;
+          }
+        }
       }
       if (page === "team") {
       }
