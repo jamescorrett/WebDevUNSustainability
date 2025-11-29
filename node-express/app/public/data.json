@@ -76,6 +76,21 @@
       ]
     }
   },
-  "goals": [],
+
+  "energy": {
+    "video":[
+      {
+        "title": "ENERGY",
+        "image": "/assets/placeholder.png"
+      }
+    ],
+    "main": [
+      {
+      "para": ["This is an example text for paragragraph 1. This series of dots will test word wrapping in the flexbox: ...............................................................................................................................",
+               "3"]
+      }
+    ]
+  },
+  
   "form": []
 }

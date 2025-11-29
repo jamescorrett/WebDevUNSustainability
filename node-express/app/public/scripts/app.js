@@ -150,7 +150,31 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       }
 
-      if (page === "goals") {
+      if (page === "energy") {
+        //top row
+        const videoElement = document.getElementById("video");
+        const video = document.createElement("img");
+        video.src = "/assets/placeholder.png";
+        /*video.controls = false;
+        video.autoplay = true;
+        video.muted = true;
+        video.loop = true;
+        video.playsInline = true;*/
+        videoElement.appendChild(video);
+
+        const title = document.createElement("article");
+        videoElement.appendChild(title);
+        title.textContent = responseData.energy.video[0].title;
+
+        const imgElement1 = document.getElementById("box2");
+        const img = document.createElement("img");
+        img.src = "/assets/placeholder.png";
+        imgElement1.appendChild(img);
+
+        const paraElement1 = document.getElementById("box1");
+        const para = document.createElement("p");
+        paraElement1.appendChild(para);
+        para.textContent = responseData.energy.main[0].para;
       }
 
       if (page === "land") {
