@@ -91,6 +91,23 @@
       }
     ]
   },
+
+  "land": {
+    "video": [
+      {
+        "title": "LAND",
+        "image": "/assets/trees.jpg"
+      }
+    ],
+    "main": [
+      {
+        "para": [
+          "Healthy land protects biodiversity and supports the communities that depend on it.",
+          "Reforestation and regenerative agriculture fight erosion, improve food security, and restore ecosystems."
+        ]
+      }
+    ]
+  },
   
   "form": []
 }
