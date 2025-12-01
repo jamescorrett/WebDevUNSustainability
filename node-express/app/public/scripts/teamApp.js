@@ -3,28 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (currentPath === "") {
     currentPath = "index.html";
   }
-  const navItems = document.getElementById("navBar");
-  const navUl = document.createElement("ul");
-  navItems.appendChild(navUl);
 
   fetch("data.json")
     .then((response) => response.json())
     .then((responseData) => {
-      // global navigation
-      for (item of responseData.nav) {
-        const navList = document.createElement("li");
-        const navAnchor = document.createElement("a");
-
-        navAnchor.href = item.url;
-        navAnchor.textContent = item.linkText;
-
-        if (item.url === currentPath) {
-          navAnchor.classList.add("active");
-        }
-
-        navList.appendChild(navAnchor);
-        navUl.appendChild(navList);
-      }
 
       //intersectobserve test
       // Intersection Observer setup
@@ -45,4 +27,4 @@ document.addEventListener("DOMContentLoaded", () => {
       const hiddenElements = document.querySelectorAll(".hidden");
       hiddenElements.forEach((el) => observer.observe(el));
     });
-});
+})
