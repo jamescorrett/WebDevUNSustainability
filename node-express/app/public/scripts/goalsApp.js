@@ -23,22 +23,26 @@ document.addEventListener("DOMContentLoaded", () => {
       videoElement.appendChild(title);
       title.textContent = responseData.energy.video[0].title;
 
-      const imgElement1 = document.getElementById("box2");
-      const img = document.createElement("img");
-      img.src = "/assets/placeholder.png";
-      imgElement1.appendChild(img);
-
       //Appends data from json into main section textBox elements
       const mainSection = document.getElementById("main");
       var children = mainSection.children;
       var x = 0;
+      var y = 0;
       for (var i = 0; i < children.length; i++) {
         var tableChild = children[i];
-        if (tableChild.classList.contains("textBox")) {
+        if (tableChild.classList.contains("textBox")) 
+        {
           const para = document.createElement("p");
           tableChild.appendChild(para);
           para.textContent = responseData.energy.main[0].para[x];
           x++;
+        }
+        else if (tableChild.classList.contains("imgBox")) 
+        {
+          const img = document.createElement("img");
+          tableChild.appendChild(img);
+          img.src = responseData.energy.main[0].image[y];
+          y++;
         }
       }
 
