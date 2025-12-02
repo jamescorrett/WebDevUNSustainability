@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
             name.className = "team-name";
             name.textContent = member.name;
 
-            // Overlay for hover text
             const overlay = document.createElement("div");
             overlay.className = "team-overlay";
 
@@ -42,7 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const audio = new Audio(member.song);
 
-            // Hover only on the image wrapper
             imageWrapper.addEventListener("mouseenter", () => {
               imageWrapper.classList.add("hovered");
 
@@ -54,7 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
               currentAudio = audio;
               audio.currentTime = 0;
               audio.play().catch(() => {
-                // ignore autoplay issues
               });
             });
 
