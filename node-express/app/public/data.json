@@ -29,27 +29,27 @@
   "teamMembers":[
     {
       "name": "James",
-      "image": "/assets/energy.jpg",
+      "image": "/assets/james.jpg",
       "song": "/assets/james.mp3",
       "description": "Contributions - Home page video + overlay, Land page, Team page, Github hosting"
     },    
     {
       "name": "Tristan",
-      "image": "/assets/energy.jpg",
+      "image": "/assets/tristan.jpg",
       "song": "/assets/tristan.mp3",
       "description": "Contributions - Energy page, Mobile navigation"
 
     },
     {
       "name": "Jacob",
-      "image": "/assets/energy.jpg",
+      "image": "/assets/jacob.jpg",
       "song": "/assets/jacob.mp3",
       "description": "Contributions - Initiated file layout, HTML Structure, Home page, Github merging, Team leader role"
 
     },
     {
       "name": "Jerome",
-      "image": "/assets/energy.jpg",
+      "image": "/assets/jerome.jpg",
       "song": "/assets/jerome.mp3",
       "description": "Contributions - Water page, Sign up form,"
 
