@@ -19,13 +19,33 @@
     </nav>
 
     <main>
+        <section class="imgform" id="imgform">
+            <form action="/form" id="myForm" method="post">
+                <fieldset>
 
+                    <h1 id="title"></h1>
 
-  
+                    <label for="name" id="nameLabel"></label>
+                    <input type="text" name="name" required id="Name">
 
-    <footer>
-        This is a footer
-    </footer>
+                    <label for="lastname" id="lastname" maxlength ="20"></label>
+                    <input type="text" name="lastname" required id="lastname">
 
+                    <label for="email" id="emailLabel"> </label>
+                    <input type="email" name="email" required id="email">
+
+                    <label for="Comments" id="Comments"></label>
+                    <textarea name="Comments" rows="5"></textarea>
+
+                    <input type="submit" id="ConfirmMessage" value="Send Message" class="btn">
+
+                    <p id="Confirmation"></p>
+                   
+                </fieldset>
+            </form>
+        </section>
+</main>
+<footer>
+</footer>
 </body>
 </html>

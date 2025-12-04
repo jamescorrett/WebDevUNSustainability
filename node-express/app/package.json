@@ -17,14 +17,18 @@
     "environment",
     "awareness"
   ],
-  "author": "Jerome Bossman-Ceaser, James Corrett, Tristan Evans, Jacob Sharred",
+  "author": "Jerome, James Corrett, Tristan Evans, Jacob Sharred",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jamescorrett/WebDevUNSustainability/issues"
   },
   "homepage": "https://github.com/jamescorrett/WebDevUNSustainability#readme",
   "dependencies": {
-    "express": "^5.1.0"
+    "body-parser": "^2.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "nodemailer": "^7.0.11"
   },
   "devDependencies": {
     "nodemon": "^3.1.11"

@@ -76,6 +76,58 @@
       ]
     }
   },
-  "goals": [],
-  "form": []
+  "water": {
+    "video":[
+      {
+        "title": "water",
+        "image": "/assets/placeholder.jpg"
+      }
+    ],
+    "main": [
+      {
+      "para": 
+        [
+        "Seas, oceans, rivers cover 70 percent of our planet providing food,water and energy. Oceans alone make up over 96% of all the water on Earth. It is a well known fact that Oceans also are a major contributor to oceans absorbing up 30-50% of the Co2 in the environment, a key source of reducing greenhouse gases in the ozone layer.The preservation of our oceans is a vital requirement for a safe and livable Earth.",
+        "Though scientists have officially discovered around 240,000 it is estimated that the true number of species living underwater could be 2.2 million, almost ten times more than the recorded ocean census initiative aims to classify 100,000 more by the end of the decade. The biggest present threats to life in our oceans are undisputedly climate change as well as pollution. Over 8 million metric tons of plastic yearly end up in our oceans killing and endangering millions of animals yearly from chemical infection to of microplastic as well as Over 100,000 animals die from physical entanglement. It is imperative we work collectively to minimise the impact of plastics in our environment"
+        
+        ],
+      
+      "image":
+      [
+        "/assets/dolphin.jpg",
+        "/assets/fins.jpg"
+      ]
+      }
+    ]
+  },
+
+  "land": {
+    "video": [
+      {
+        "title": "LAND",
+        "image": "/assets/trees.jpg"
+      }
+    ],
+    "main": [
+      {
+        "para": [
+          "Healthy land protects biodiversity and supports the communities that depend on it.",
+          "Reforestation and regenerative agriculture fight erosion, improve food security, and restore ecosystems."
+        ]
+      }
+    ]
+  },
+  
+  "form": [
+    {  
+      "title": "sign up now",
+      "name":"First Name",
+      "lastname":"Last Name",
+      "email":"Email",
+      "Comments": "Your Comments",
+      "ConfirmMessage":"send message"
+
+      
+    }
+  ]
 }
