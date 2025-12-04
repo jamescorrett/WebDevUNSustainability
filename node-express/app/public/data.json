@@ -1,58 +1,37 @@
 {
   "nav": [
-    {
-      "linkText": "home",
-      "url": "index.html"
-    },
-    {
-      "linkText": "energy",
-      "url": "energy.html"
-    },
-    {
-      "linkText": "water",
-      "url": "water.html"
-    },
-    {
-      "linkText": "land",
-      "url": "land.html"
-    },
-    {
-      "linkText": "team",
-      "url": "team.html"
-    },
-    {
-      "linkText": "get Involved",
-      "url": "join.html"
-    }
+    { "linkText": "home", "url": "index.html" },
+    { "linkText": "energy", "url": "energy.html" },
+    { "linkText": "water", "url": "water.html" },
+    { "linkText": "land", "url": "land.html" },
+    { "linkText": "team", "url": "team.html" },
+    { "linkText": "get Involved", "url": "join.html" }
   ],
 
-  "teamMembers":[
+  "teamMembers": [
     {
       "name": "James",
       "image": "/assets/james.jpg",
       "song": "/assets/james.mp3",
       "description": "Contributions - Home page video + overlay, Land page, Team page, Github hosting"
-    },    
+    },
     {
       "name": "Tristan",
       "image": "/assets/tristan.jpg",
       "song": "/assets/tristan.mp3",
       "description": "Contributions - Energy page, Mobile navigation"
-
     },
     {
       "name": "Jacob",
       "image": "/assets/jacob.jpg",
       "song": "/assets/jacob.mp3",
       "description": "Contributions - Initiated file layout, HTML Structure, Home page, Github merging, Team leader role"
-
     },
     {
       "name": "Jerome",
       "image": "/assets/jerome.jpg",
       "song": "/assets/jerome.mp3",
-      "description": "Contributions - Water page, Sign up form,"
-
+      "description": "Contributions - Water page, Sign up form"
     }
   ],
 
@@ -64,33 +43,13 @@
       }
     ],
     "goals": [
-      {
-        "title": "energy",
-        "image": "/assets/energy.jpg",
-        "url": "energy.html"
-      },
-      {
-        "title": "water",
-        "image": "/assets/water.jpg",
-        "url": "water.html"
-      },
-      {
-        "title": "land",
-        "image": "/assets/trees.jpg",
-        "url": "land.html"
-      }
+      { "title": "energy", "image": "/assets/energy.jpg", "url": "energy.html" },
+      { "title": "water", "image": "/assets/water.jpg", "url": "water.html" },
+      { "title": "land", "image": "/assets/trees.jpg", "url": "land.html" }
     ],
     "rowPages": [
-      {
-        "title": "meet the team",
-        "image": "/assets/join.jpg",
-        "url": "team.html"
-      },
-      {
-        "title": "sign up now",
-        "image": "/assets/plants.jpg",
-        "url": "join.html"
-      }
+      { "title": "meet the team", "image": "/assets/join.jpg", "url": "team.html" },
+      { "title": "sign up now", "image": "/assets/plants.jpg", "url": "join.html" }
     ],
     "bottom": {
       "contents": {
@@ -107,14 +66,18 @@
       ]
     }
   },
+
   "water": {
-    "video":[
+    "video": [
       {
         "title": "water",
         "image": "/assets/placeholder.jpg"
+      }
+    ]
+  },
 
   "energy": {
-    "video":[
+    "video": [
       {
         "title": "ENERGY",
         "image": "/assets/placeholder.png"
@@ -122,25 +85,17 @@
     ],
     "main": [
       {
-      "para": 
-        [
-        "Seas, oceans, rivers cover 70 percent of our planet providing food,water and energy. Oceans alone make up over 96% of all the water on Earth. It is a well known fact that Oceans also are a major contributor to oceans absorbing up 30-50% of the Co2 in the environment, a key source of reducing greenhouse gases in the ozone layer.The preservation of our oceans is a vital requirement for a safe and livable Earth.",
-        "Though scientists have officially discovered around 240,000 it is estimated that the true number of species living underwater could be 2.2 million, almost ten times more than the recorded ocean census initiative aims to classify 100,000 more by the end of the decade. The biggest present threats to life in our oceans are undisputedly climate change as well as pollution. Over 8 million metric tons of plastic yearly end up in our oceans killing and endangering millions of animals yearly from chemical infection to of microplastic as well as Over 100,000 animals die from physical entanglement. It is imperative we work collectively to minimise the impact of plastics in our environment"
-        
+        "para": [
+          "Seas, oceans, rivers cover 70 percent of our planet providing food, water and energy. Oceans alone make up over 96% of all the water on Earth. It is a well known fact that oceans also are a major contributor to absorbing 30-50% of the CO2 in the environment, a key source of reducing greenhouse gases in the ozone layer. The preservation of our oceans is a vital requirement for a safe and livable Earth.",
+          "Though scientists have officially discovered around 240,000 species, it is estimated that the true number of species living underwater could be 2.2 million, almost ten times more than the recorded ocean census. The biggest present threats to life in our oceans are climate change and pollution. Over 8 million metric tons of plastic yearly end up in our oceans killing and endangering millions of animals yearly. It is imperative we work collectively to minimise the impact of plastics in our environment.",
+          "Several breakthroughs in clean energy have been made over the past decade. In China the S1500 has been developed, this is a 13-story tall zeppelin-like craft housing 12 generator units each rated at 100kW of energy. This is a grand breakthrough in green energy technology as the elevated altitudes allow for greater windspeed to be captured and converted into energy."
         ],
-      
-      "image":
-      [
-        "/assets/dolphin.jpg",
-        "/assets/fins.jpg"
-        "Several breakthroughs in clean energy have been made over the past decade. In China the S1500 has been developed, this is a 13-story tall zepplin like craft housing 12 generator units each rated at 100kW of energy. This is a grand breakthrough in green energy technology as the elevated altitudes allows for greater windspeed to be captured and converted into energy.",
-        "3"
-        ],
-      "image":
-      [
-        "/assets/placeholder.png",
-        "/assets/placeholder.png"
-      ]
+        "image": [
+          "/assets/dolphin.jpg",
+          "/assets/fins.jpg",
+          "/assets/placeholder.png",
+          "/assets/placeholder.png"
+        ]
       }
     ]
   },
@@ -161,17 +116,15 @@
       }
     ]
   },
-  
-  "form": [
-    {  
-      "title": "sign up now",
-      "name":"First Name",
-      "lastname":"Last Name",
-      "email":"Email",
-      "Comments": "Your Comments",
-      "ConfirmMessage":"send message"
 
-      
+  "form": [
+    {
+      "title": "sign up now",
+      "name": "First Name",
+      "lastname": "Last Name",
+      "email": "Email",
+      "Comments": "Your Comments",
+      "ConfirmMessage": "send message"
     }
   ]
 }
