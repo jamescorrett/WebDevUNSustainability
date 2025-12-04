@@ -1,0 +1,75 @@
+/* Layout for the whole team section */
+.team-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  /* Each card */
+  .team-member {
+    flex: 0 1 350px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  /* Image + overlay wrapper */
+  .team-image-wrapper {
+    position: relative;
+    width: 350px;
+    height: 800px;
+    margin: 0 auto 0.75rem;
+    overflow: hidden;
+  }
+  
+  /* Photo styling */
+  .team-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: filter 0.3s ease, transform 0.3s ease;
+  }
+  /* Blur,zoom and dim effect on image hover*/
+  .team-image-wrapper.hovered .team-photo {
+    filter: blur(3px) brightness(0.5);
+    transform: scale(1.05);
+  }
+  
+  /* Overlay styling (flex + center for easy life)*/
+  .team-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  /*Image hover toggle*/
+  .team-image-wrapper.hovered .team-overlay {
+    opacity: 1;
+  }
+  /* Overlay text styling*/
+  .team-overlay-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  /*Overlay hover off toggle + animation*/
+  .team-member.hidden {
+    opacity: 0;
+    transform: translateY(15px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  /*Overlay hover on toggle*/
+  .team-member.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
