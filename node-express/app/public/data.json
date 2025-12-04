@@ -81,6 +81,12 @@
       {
         "title": "water",
         "image": "/assets/placeholder.jpg"
+
+  "energy": {
+    "video":[
+      {
+        "title": "ENERGY",
+        "image": "/assets/placeholder.png"
       }
     ],
     "main": [
@@ -96,6 +102,13 @@
       [
         "/assets/dolphin.jpg",
         "/assets/fins.jpg"
+        "Several breakthroughs in clean energy have been made over the past decade. In China the S1500 has been developed, this is a 13-story tall zepplin like craft housing 12 generator units each rated at 100kW of energy. This is a grand breakthrough in green energy technology as the elevated altitudes allows for greater windspeed to be captured and converted into energy.",
+        "3"
+        ],
+      "image":
+      [
+        "/assets/placeholder.png",
+        "/assets/placeholder.png"
       ]
       }
     ]
