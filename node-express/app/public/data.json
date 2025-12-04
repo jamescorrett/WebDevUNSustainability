@@ -107,6 +107,11 @@
       ]
     }
   },
+  "water": {
+    "video":[
+      {
+        "title": "water",
+        "image": "/assets/placeholder.jpg"
 
   "energy": {
     "video":[
@@ -119,6 +124,15 @@
       {
       "para": 
         [
+        "Seas, oceans, rivers cover 70 percent of our planet providing food,water and energy. Oceans alone make up over 96% of all the water on Earth. It is a well known fact that Oceans also are a major contributor to oceans absorbing up 30-50% of the Co2 in the environment, a key source of reducing greenhouse gases in the ozone layer.The preservation of our oceans is a vital requirement for a safe and livable Earth.",
+        "Though scientists have officially discovered around 240,000 it is estimated that the true number of species living underwater could be 2.2 million, almost ten times more than the recorded ocean census initiative aims to classify 100,000 more by the end of the decade. The biggest present threats to life in our oceans are undisputedly climate change as well as pollution. Over 8 million metric tons of plastic yearly end up in our oceans killing and endangering millions of animals yearly from chemical infection to of microplastic as well as Over 100,000 animals die from physical entanglement. It is imperative we work collectively to minimise the impact of plastics in our environment"
+        
+        ],
+      
+      "image":
+      [
+        "/assets/dolphin.jpg",
+        "/assets/fins.jpg"
         "Several breakthroughs in clean energy have been made over the past decade. In China the S1500 has been developed, this is a 13-story tall zepplin like craft housing 12 generator units each rated at 100kW of energy. This is a grand breakthrough in green energy technology as the elevated altitudes allows for greater windspeed to be captured and converted into energy.",
         "3"
         ],
@@ -148,5 +162,16 @@
     ]
   },
   
-  "form": []
+  "form": [
+    {  
+      "title": "sign up now",
+      "name":"First Name",
+      "lastname":"Last Name",
+      "email":"Email",
+      "Comments": "Your Comments",
+      "ConfirmMessage":"send message"
+
+      
+    }
+  ]
 }
