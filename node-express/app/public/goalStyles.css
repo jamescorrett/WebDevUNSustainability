@@ -1,3 +1,6 @@
+/*currently displays an image, will change to fit name when video is found*/
+
+
 .video{
     position: relative;
     display: block;
@@ -6,7 +9,11 @@
     margin: 0 auto;
     padding: 1.5rem 0rem;
     box-sizing: border-box;
+    height: 10%;
+    overflow: auto;
+    box-sizing: border-box;
 }
+/*currently img for placeholder*/
 .video img {
     width: 100%;
     aspect-ratio: 8 / 3;
@@ -100,6 +107,7 @@ footer {
     object-fit: cover;
 }
 
+
 .hidden{
     opacity: 0;
     transform: translateX(16px);
@@ -109,25 +117,3 @@ footer {
     opacity: 1;
     transform: translateX(0);
 }
-main {
-    position: relative;
-}
-
-#main {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    color: #fff;
-    background: rgba(0, 0, 0, 0.35);
-    border: none;             
-
-
