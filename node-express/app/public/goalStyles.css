@@ -89,7 +89,6 @@ footer {
     object-fit: fill;
 }
 
-/*here to show where boxes are during templating*/
 #box1 {
     background-color: rgb(255, 255, 255);
 }
@@ -108,8 +107,6 @@ footer {
     object-fit: cover;
 }
 
-/*here to show where boxes are during templating*/
-
 .hidden{
     opacity: 0;
     transform: translateX(16px);
@@ -119,3 +116,29 @@ footer {
     opacity: 1;
     transform: translateX(0);
 }
+
+.land {
+  position: relative;
+  overflow: hidden;
+}
+
+.land video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.landpara {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+}
+
