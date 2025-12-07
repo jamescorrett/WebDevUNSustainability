@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const landVideo = document.getElementById("video");
 
-  // Hero video + title
+  // hero video + title
   const landVideoElement = document.createElement("video");
   landVideoElement.src = "/assets/treesvideo.mp4";
   landVideoElement.autoplay = true;
@@ -13,15 +13,17 @@ document.addEventListener("DOMContentLoaded", () => {
   landTitle.classList.add("hidden");
   landTitle.textContent = "Land";
   landVideo.append(landVideoElement, landTitle);
+  // force the tilte to fade in
+  requestAnimationFrame(() => landTitle.classList.add("show"));
 
-  // Middle image box
+  // middle image box.
   const landBox = document.getElementById("imgBox");
   const landImage = document.createElement("img");
   landImage.src = "/assets/trees.jpg";
   landImage.alt = "Forest conservation";
   landBox.appendChild(landImage);
 
-  // Text boxes
+  // text boxes
   const paragraphs = [
     "Healthy land protects biodiversity and supports the communities that depend on it.",
     "Reforestation and regenerative agriculture fight erosion, improve food security, and restore ecosystems."
