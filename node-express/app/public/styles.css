@@ -28,9 +28,8 @@ body {
     font-weight: bold;
 }
 
+
 #navBar ul {
-    background-color: dodgerblue;
-nav ul {
     background-color: black;
     display: flex;
     justify-content: center;
