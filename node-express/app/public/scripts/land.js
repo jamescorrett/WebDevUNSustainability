@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // middle image box.
   const landBox = document.getElementById("imgBox");
   const landImage = document.createElement("img");
-  landImage.src = "/assets/trees.jpg";
+  landImage.src = "/assets/trees.png";
   landImage.alt = "Forest conservation";
   landBox.appendChild(landImage);
 
@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
   ];*/
   const textBoxes = document.querySelectorAll("#main .textBox");
   textBoxes.forEach((box, paragraphIndex) => {
-  const p = document.createElement("p");
-  p.textContent = paragraphs[paragraphIndex] || "";
-  box.appendChild(p);
-});
+    const p = document.createElement("p");
+    p.textContent = paragraphs[paragraphIndex] || "";
+    box.appendChild(p);
+  });
 });
