@@ -10,28 +10,28 @@
 
   "teamMembers": [
     {
-      "name": "James",
-      "image": "/assets/james.jpg",
-      "song": "/assets/james.mp3",
-      "description": "Contributions - Home page video + overlay, Land page, Team page, Github hosting"
+      "linkText": "HOME",
+      "url": "index.html"
     },
     {
-      "name": "Tristan",
-      "image": "/assets/tristan.jpg",
-      "song": "/assets/tristan.mp3",
-      "description": "Contributions - Energy page, Mobile navigation"
+      "linkText": "ENERGY",
+      "url": "energy.html"
     },
     {
-      "name": "Jacob",
-      "image": "/assets/jacob.jpg",
-      "song": "/assets/jacob.mp3",
-      "description": "Contributions - Initiated file layout, HTML Structure, Home page, Github merging, Team leader role"
+      "linkText": "WATER",
+      "url": "water.html"
     },
     {
-      "name": "Jerome",
-      "image": "/assets/jerome.jpg",
-      "song": "/assets/jerome.mp3",
-      "description": "Contributions - Water page, Sign up form"
+      "linkText": "LAND",
+      "url": "land.html"
+    },
+    {
+      "linkText": "TEAM",
+      "url": "team.html"
+    },
+    {
+      "linkText": "GET INVOLVED",
+      "url": "join.html"
     }
   ],
 

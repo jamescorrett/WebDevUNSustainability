@@ -26,6 +26,17 @@ document.addEventListener("DOMContentLoaded", () => {
         navUl.appendChild(navList);
       }
 
+      const nav = document.getElementById("navBar")
+
+      document.addEventListener("mousewheel", function(event)
+      {
+        if(event.wheelDelta >= 0){
+          nav.classList.remove('postScroll');
+        }
+        else if (event.wheelDelta <= 0){
+          nav.classList.add('postScroll');
+        }
+      })
       const page = document.body.dataset.page; // content specific for pages (body page-data ="pagename")
  
       // water page 
