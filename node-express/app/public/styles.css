@@ -30,6 +30,8 @@ body {
 
 #navBar ul {
     background-color: dodgerblue;
+nav ul {
+    background-color: black;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -49,7 +51,7 @@ body {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 25px;
     width: 100%;
     padding: 0 50px;
@@ -64,3 +66,4 @@ body {
     font-weight: bolder;
     background-color: rgba(0, 0, 0, 0.1);
 }
+
