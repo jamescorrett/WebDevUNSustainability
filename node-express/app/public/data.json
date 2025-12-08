@@ -29,36 +29,42 @@
     "video": [
       {
         "title": "UN Sustainability Council",
-        "image": "car.png"
+        "videoSrc": "/assets/fish.mp4",
+        "imageAlt": "Video of tropical fish swimming underwater"
       }
     ],
     "goals": [
       {
         "title": "energy",
-        "image": "/assets/energy.jpg",
-        "url": "energy.html"
+        "image": "/assets/energy.png",
+        "url": "energy.html",
+        "imageAlt": "Image of a low sun and wind turbines"
       },
       {
         "title": "water",
-        "image": "/assets/water.jpg",
-        "url": "water.html"
+        "image": "/assets/water.png",
+        "url": "water.html",
+        "imageAlt": "Image ofa turtle and some fish underwater"
       },
       {
         "title": "land",
-        "image": "/assets/trees.jpg",
-        "url": "land.html"
+        "image": "/assets/trees.png",
+        "url": "land.html",
+        "imageAlt": "Image of a forest with a river running through"
       }
     ],
     "rowPages": [
       {
         "title": "meet the team",
-        "image": "/assets/join.jpg",
-        "url": "team.html"
+        "image": "/assets/join.png",
+        "url": "team.html",
+        "imageAlt": ""
       },
       {
         "title": "sign up now",
-        "image": "/assets/plants.jpg",
-        "url": "join.html"
+        "image": "/assets/plants.png",
+        "url": "join.html",
+        "imageAlt": ""
       }
     ],
     "bottom": {
@@ -78,19 +84,22 @@
   },
 
   "energy": {
-    "video":[
+    "video": [
       {
         "title": "ENERGY",
-        "image": "/assets/placeholder.png"
+        "image": "/assets/placeholder.png",
+        "imageAlt": ""
       }
     ],
     "main": [
       {
-      "para": ["This is an example text for paragragraph 1. This series of dots will test word wrapping in the flexbox: ...............................................................................................................................",
-               "3"]
+        "para": [
+          "This is an example text for paragragraph 1. This series of dots will test word wrapping in the flexbox: ...............................................................................................................................",
+          "3"
+        ]
       }
     ]
   },
-  
+
   "form": []
 }
