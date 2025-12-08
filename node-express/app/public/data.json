@@ -1,27 +1,27 @@
 {
   "nav": [
     {
-      "linkText": "home",
+      "linkText": "HOME",
       "url": "index.html"
     },
     {
-      "linkText": "energy",
+      "linkText": "ENERGY",
       "url": "energy.html"
     },
     {
-      "linkText": "water",
+      "linkText": "WATER",
       "url": "water.html"
     },
     {
-      "linkText": "land",
+      "linkText": "LAND",
       "url": "land.html"
     },
     {
-      "linkText": "team",
+      "linkText": "TEAM",
       "url": "team.html"
     },
     {
-      "linkText": "get Involved",
+      "linkText": "GET INVOLVED",
       "url": "join.html"
     }
   ],

@@ -26,6 +26,18 @@ document.addEventListener("DOMContentLoaded", () => {
         navUl.appendChild(navList);
       }
 
+      const nav = document.getElementById("navBar")
+
+      document.addEventListener("mousewheel", function(event)
+      {
+        if(event.wheelDelta >= 0){
+          nav.classList.remove('postScroll');
+        }
+        else if (event.wheelDelta <= 0){
+          nav.classList.add('postScroll');
+        }
+      })
+
       //intersectobserve test
       // Intersection Observer setup
       const observer = new IntersectionObserver(
