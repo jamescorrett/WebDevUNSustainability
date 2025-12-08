@@ -29,9 +29,9 @@ document.addEventListener("DOMContentLoaded", () => {
     "Reforestation and regenerative agriculture fight erosion, improve food security, and restore ecosystems."
   ];
   const textBoxes = document.querySelectorAll("#main .textBox");
-textBoxes.forEach((box, paragraphIndex) => {
-    const p = document.createElement("p");
-    p.textContent = paragraphs[paragraphIndex] || "";
-    box.appendChild(p);
+  textBoxes.forEach((box, paragraphIndex) => {
+  const p = document.createElement("p");
+  p.textContent = paragraphs[paragraphIndex] || "";
+  box.appendChild(p);
 });
 });
