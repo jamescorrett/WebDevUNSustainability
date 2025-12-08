@@ -2,10 +2,34 @@ body {
     font-family: 'Roboto Condensed', Arial, sans-serif;
     display: block;
     align-items: center;
-    padding: 0;
+    padding: 100px 0 0 0;
     margin: 0;
 }
 
+#navBar {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.6s;
+    font-weight: bold;
+}
+
+#navBar.postScroll {
+    position: fixed;
+    width: 100%;
+    top: -100px;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.6s;
+    font-weight: bold;
+}
+
+#navBar ul {
+    background-color: dodgerblue;
 nav ul {
     background-color: black;
     display: flex;
@@ -16,13 +40,13 @@ nav ul {
     height: 100px;
 }
 
-nav ul li {
+#navBar ul li {
     display: flex;
     justify-content: center;
     margin: 0;
 }
 
-nav ul li a {
+#navBar ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,11 +58,11 @@ nav ul li a {
     transition: background-color 0.3s ease, font-weight 0.3s ease;
 }
 
-nav ul li a.active {
+#navBar ul li a.active {
     text-decoration: underline;
 }
 
-nav ul li a:hover {
+#navBar ul li a:hover {
     font-weight: bolder;
     background-color: rgba(0, 0, 0, 0.1);
 }

@@ -23,11 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
   landImage.alt = "Forest conservation";
   landBox.appendChild(landImage);
 
-  // text boxe's
-  const paragraphs = [
+  // Text boxes
+  /*const paragraphs = [
     "Healthy land protects biodiversity and supports the communities that depend on it.",
     "Reforestation and regenerative agriculture fight erosion, improve food security, and restore ecosystems."
-  ];
+  ];*/
   const textBoxes = document.querySelectorAll("#main .textBox");
   textBoxes.forEach((box, paragraphIndex) => {
   const p = document.createElement("p");
