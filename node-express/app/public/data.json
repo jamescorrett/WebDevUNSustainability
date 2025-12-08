@@ -46,21 +46,21 @@
     "goals": [
       {
         "title": "energy",
-        "image": "/assets/energy.jpg",
+        "image": "/assets/energy.png",
         "url": "energy.html"
       },
-      { "title": "water", "image": "/assets/water.jpg", "url": "water.html" },
-      { "title": "land", "image": "/assets/trees.jpg", "url": "land.html" }
+      { "title": "water", "image": "/assets/water.png", "url": "water.html" },
+      { "title": "land", "image": "/assets/trees.png", "url": "land.html" }
     ],
     "rowPages": [
       {
         "title": "meet the team",
-        "image": "/assets/join.jpg",
+        "image": "/assets/join.png",
         "url": "team.html"
       },
       {
         "title": "sign up now",
-        "image": "/assets/plants.jpg",
+        "image": "/assets/plants.png",
         "url": "join.html"
       }
     ],
