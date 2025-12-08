@@ -10,28 +10,28 @@
 
   "teamMembers": [
     {
-      "linkText": "HOME",
-      "url": "index.html"
+      "name": "James",
+      "image": "/assets/james.jpg",
+      "song": "/assets/james.mp3",
+      "description": "Contributions - Home page video + overlay, Land page, Team page, Github hosting"
     },
     {
-      "linkText": "ENERGY",
-      "url": "energy.html"
+      "name": "Tristan",
+      "image": "/assets/tristan.jpg",
+      "song": "/assets/tristan.mp3",
+      "description": "Contributions - Energy page, Mobile navigation"
     },
     {
-      "linkText": "WATER",
-      "url": "water.html"
+      "name": "Jacob",
+      "image": "/assets/jacob.jpg",
+      "song": "/assets/jacob.mp3",
+      "description": "Contributions - Initiated file layout, HTML Structure, Home page, Github merging, Team leader role"
     },
     {
-      "linkText": "LAND",
-      "url": "land.html"
-    },
-    {
-      "linkText": "TEAM",
-      "url": "team.html"
-    },
-    {
-      "linkText": "GET INVOLVED",
-      "url": "join.html"
+      "name": "Jerome",
+      "image": "/assets/jerome.jpg",
+      "song": "/assets/jerome.mp3",
+      "description": "Contributions - Water page, Sign up form"
     }
   ],
 
@@ -39,17 +39,30 @@
     "video": [
       {
         "title": "UN Sustainability Council",
-        "image": "car.png"
+        "videoSrc": "/assets/fish.mp4",
+        "imageAlt": "Video of tropical fish swimming underwater"
       }
     ],
     "goals": [
-      { "title": "energy", "image": "/assets/energy.jpg", "url": "energy.html" },
-      { "title": "water", "image": "/assets/water.jpg", "url": "water.html" },
-      { "title": "land", "image": "/assets/trees.jpg", "url": "land.html" }
+      {
+        "title": "energy",
+        "image": "/assets/energy.png",
+        "url": "energy.html"
+      },
+      { "title": "water", "image": "/assets/water.png", "url": "water.html" },
+      { "title": "land", "image": "/assets/trees.png", "url": "land.html" }
     ],
     "rowPages": [
-      { "title": "meet the team", "image": "/assets/join.jpg", "url": "team.html" },
-      { "title": "sign up now", "image": "/assets/plants.jpg", "url": "join.html" }
+      {
+        "title": "meet the team",
+        "image": "/assets/join.png",
+        "url": "team.html"
+      },
+      {
+        "title": "sign up now",
+        "image": "/assets/plants.png",
+        "url": "join.html"
+      }
     ],
     "bottom": {
       "contents": {
@@ -80,7 +93,8 @@
     "video": [
       {
         "title": "ENERGY",
-        "image": "/assets/placeholder.png"
+        "image": "/assets/placeholder.png",
+        "imageAlt": ""
       }
     ],
     "main": [
