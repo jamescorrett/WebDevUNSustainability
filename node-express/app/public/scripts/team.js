@@ -15,37 +15,37 @@ document.addEventListener("DOMContentLoaded", () => {
           let currentAudio = null;
 
           members.forEach((member) => {
-          const card = document.createElement("article");
-          card.className = "team-member hidden";
-            
-          const imageWrapper = document.createElement("div");
-          imageWrapper.className = "team-image-wrapper";
-
-          const img = document.createElement("img");
-          img.className = "team-photo";
-          img.src = member.image;
-          img.alt = member.name || "Team member";
-
-          const name = document.createElement("h3");
-          name.className = "team-name";
-          name.textContent = member.name;
-
-          const overlay = document.createElement("div");
-          overlay.className = "team-overlay";
-
-          const overlayText = document.createElement("p");
-          overlayText.className = "team-overlay-text";
-          overlayText.textContent = member.description;
-          overlay.appendChild(overlayText);
-
-          const audio = new Audio(member.song);
-
-          imageWrapper.addEventListener("mouseenter", () => {
-          imageWrapper.classList.add("hovered");
-
-          if (currentAudio && currentAudio !== audio) {
-            currentAudio.pause();
-            currentAudio.currentTime = 0;
+            const card = document.createElement("article");
+            card.className = "team-member hidden";
+              
+            const imageWrapper = document.createElement("div");
+            imageWrapper.className = "team-image-wrapper";
+  
+            const img = document.createElement("img");
+            img.className = "team-photo";
+            img.src = member.image;
+            img.alt = member.name || "Team member";
+  
+            const name = document.createElement("h3");
+            name.className = "team-name";
+            name.textContent = member.name;
+  
+            const overlay = document.createElement("div");
+            overlay.className = "team-overlay";
+  
+            const overlayText = document.createElement("p");
+            overlayText.className = "team-overlay-text";
+            overlayText.textContent = member.description;
+            overlay.appendChild(overlayText);
+  
+            const audio = new Audio(member.song);
+  
+            imageWrapper.addEventListener("mouseenter", () => {
+            imageWrapper.classList.add("hovered");
+  
+            if (currentAudio && currentAudio !== audio) {
+              currentAudio.pause();
+              currentAudio.currentTime = 0;
           }
 
           currentAudio = audio;
