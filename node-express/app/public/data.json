@@ -73,8 +73,24 @@
       },
       "faqs": [
         {
-          "question": "Why should I recycle?",
-          "answer": "because its good for the planet"
+          "question": "What are the United Nations Sustainable Development Goals (SDGs)?",
+          "answer": "The SDGs are 17 global goals created by the United Nations in 2015 to improve life worldwide by 2030. They focus on ending poverty, protecting the planet, and ensuring peace and prosperity for everyone."
+        },
+        {
+          "question": "Why are the SDGs important?",
+          "answer": "They provide a global plan of action to tackle major issues like climate change, inequality, hunger, poor education, and health. They help governments, businesses, and communities work toward a better future together."
+        },
+        {
+          "question": "Who is responsible for achieving the SDGs?",
+          "answer": "Everyone plays a role — governments, businesses, schools, charities, and individuals. Even small actions like saving energy, reducing waste, or supporting fair trade help contribute to the goals."
+        },
+        {
+          "question": "Are the SDGs legally binding for countries?",
+          "answer": "No, the SDGs are not legally binding, which means countries are not forced by law to follow them. However, they are encouraged to adopt the goals through national policies, development plans, and international cooperation. Many governments choose to report their progress publicly to stay accountable."
+        },
+        {
+          "question": "What happens if the SDGs are not achieved by 2030?",
+          "answer": "If the SDGs are not fully achieved by 2030, progress will still have been made, but many global problems like poverty, climate change, poor education, and inequality may continue to affect millions of people. The deadline is meant to encourage urgent action, but sustainability work will still continue beyond that date."
         }
       ]
     }
