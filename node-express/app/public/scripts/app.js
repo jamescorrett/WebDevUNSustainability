@@ -10,7 +10,18 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch("data.json")
     .then((response) => response.json())
     .then((responseData) => {
-      for (const item of responseData.nav) {
+
+      //mobile nav bar hamburger
+      let hamburger = document.querySelector('#hamburger');
+
+      hamburger.addEventListener('click', function() {
+        document.querySelector('#navBar ul').classList.toggle("showNav");
+        document.querySelector('#navBar').classList.remove("postScroll");
+        document.querySelector('#navBar').classList.toggle("showNav");
+      });
+ 
+      // global navigation
+      for (item of responseData.nav) {
         const navList = document.createElement("li");
         const navAnchor = document.createElement("a");
 
@@ -27,39 +38,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const page = document.body.dataset.page;
 
-      if (page === "water") {
-        const videoElement = document.getElementById("video");
-        const video = document.createElement("video");
-        video.src = "/assets/swimming.mp4";
-        video.controls = false;
-        video.autoplay = true;
-        video.muted = true;
-        video.loop = true;
-        video.playsInline = true;
-        videoElement.appendChild(video);
-
-        const title = document.createElement("article");
-        videoElement.appendChild(title);
-        title.textContent = responseData.water.video[0].title;
-
-        const mainSection = document.getElementById("main");
-        var children = mainSection.children;
-        var x = 0;
-        var y = 0;
-        for (var i = 0; i < children.length; i++) {
-          var tableChild = children[i];
-          if (tableChild.classList.contains("textBox")) {
-            const para = document.createElement("p");
-            tableChild.appendChild(para);
-            para.textContent = responseData.water.main[0].para[x];
-            x++;
-          } else if (tableChild.classList.contains("imgBox")) {
-            const img = document.createElement("img");
-            tableChild.appendChild(img);
-            img.src = responseData.water.main[0].image[y];
-            y++;
-          }
+      document.addEventListener("mousewheel", function(event)
+      {
+        if(event.wheelDelta >= 0 && nav.classList!="showNav"){
+          nav.classList.remove('postScroll');
         }
+        else if (event.wheelDelta <= 0 && nav.classList!="showNav"){
+          nav.classList.add('postScroll');
+        }
+      })
+      const page = document.body.dataset.page; // content specific for pages (body page-data ="pagename")
+
+      if (page === "form") {
+
+        const titleElement = document.getElementById("title");
+        titleElement.textContent = responseData.form[0].title;
+
+        const nameElement = document.getElementById("nameLabel");
+        nameElement.textContent = responseData.form[0].name;
+        
+        const lastnameElement = document.getElementById("lastname");
+        lastnameElement.textContent = responseData.form[0].lastname;
+
+        const emailElement = document.getElementById("emailLabel");
+        emailElement.textContent = responseData.form[0].email;
+       
+
+        const CommentsElement = document.getElementById("Comments");
+        CommentsElement.textContent = responseData.form[0].Comments;
+
+        const ConfirmMessageElement = document.getElementById("ConfirmMessage");
+        ConfirmMessageElement.textContent = responseData.form[0].ConfirmMessage;
       }
 
       if (page === "team") {
@@ -80,5 +89,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const hiddenElements = document.querySelectorAll(".hidden");
       hiddenElements.forEach((el) => observer.observe(el));
-    });
+    }); 
 });
