@@ -46,22 +46,22 @@ document.addEventListener("DOMContentLoaded", () => {
             if (currentAudio && currentAudio !== audio) {
               currentAudio.pause();
               currentAudio.currentTime = 0;
-          }
-
-          currentAudio = audio;
-          audio.currentTime = 0;
-          audio.play().catch(() => {
-          });
-          });
-
-          imageWrapper.addEventListener("mouseleave", () => {
-          imageWrapper.classList.remove("hovered");
-
-          audio.pause();
-          audio.currentTime = 0;
-          if (currentAudio === audio) {
-            currentAudio = null;
-          }
+            }
+  
+            currentAudio = audio;
+            audio.currentTime = 0;
+            audio.play().catch(() => {
+            });
+            });
+  
+            imageWrapper.addEventListener("mouseleave", () => {
+            imageWrapper.classList.remove("hovered");
+  
+            audio.pause();
+            audio.currentTime = 0;
+            if (currentAudio === audio) {
+              currentAudio = null;
+            }
           });
 
           imageWrapper.appendChild(img);
