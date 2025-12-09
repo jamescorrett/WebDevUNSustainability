@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         navUl.appendChild(navList);
       }
 
-      const page = document.body.dataset.page;
+      const page = document.body.dataset.page; // content specific for pages (body page-data ="pagename")
 
       document.addEventListener("mousewheel", function(event)
       {
@@ -47,7 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
           nav.classList.add('postScroll');
         }
       })
-      const page = document.body.dataset.page; // content specific for pages (body page-data ="pagename")
 
       if (page === "form") {
 
