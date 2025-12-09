@@ -62,15 +62,15 @@ document.addEventListener("DOMContentLoaded", () => {
             if (currentAudio === audio) {
               currentAudio = null;
             }
-          });
-
-          imageWrapper.appendChild(img);
-          imageWrapper.appendChild(overlay);
-
-          card.appendChild(imageWrapper);
-          card.appendChild(name);
-
-          teamSection.appendChild(card);
+            });
+  
+            imageWrapper.appendChild(img);
+            imageWrapper.appendChild(overlay);
+  
+            card.appendChild(imageWrapper);
+            card.appendChild(name);
+  
+            teamSection.appendChild(card);
           });
         }
       }
