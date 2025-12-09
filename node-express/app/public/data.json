@@ -8,7 +8,7 @@
     { "linkText": "GET INVOLVED", "url": "join.html" }
   ],
 
-"teamMembers": [
+  "teamMembers": [
     {
       "name": "James",
       "image": "/assets/james.jpg",
@@ -38,18 +38,29 @@
   "home": {
     "video": [
       {
-        "title": "UN Sustainability Council",
-        "image": "car.png"
+        "title": "UN Sustainability Council"
       }
     ],
     "goals": [
-      { "title": "energy", "image": "/assets/energy.jpg", "url": "energy.html" },
-      { "title": "water", "image": "/assets/water.jpg", "url": "water.html" },
-      { "title": "land", "image": "/assets/trees.jpg", "url": "land.html" }
+      {
+        "title": "energy",
+        "image": "/assets/energy.png",
+        "url": "energy.html"
+      },
+      { "title": "water", "image": "/assets/water.png", "url": "water.html" },
+      { "title": "land", "image": "/assets/trees.png", "url": "land.html" }
     ],
     "rowPages": [
-      { "title": "meet the team", "image": "/assets/join.jpg", "url": "team.html" },
-      { "title": "sign up now", "image": "/assets/plants.jpg", "url": "join.html" }
+      {
+        "title": "meet the team",
+        "image": "/assets/join.png",
+        "url": "team.html"
+      },
+      {
+        "title": "sign up now",
+        "image": "/assets/plants.png",
+        "url": "join.html"
+      }
     ],
     "bottom": {
       "contents": {
@@ -59,6 +70,26 @@
         "buttonType": "button"
       },
       "faqs": [
+        {
+          "question": "What are the United Nations Sustainable Development Goals (SDGs)?",
+          "answer": "The SDGs are 17 global goals created by the United Nations in 2015 to improve life worldwide by 2030. They focus on ending poverty, protecting the planet, and ensuring peace and prosperity for everyone."
+        },
+        {
+          "question": "Why are the SDGs important?",
+          "answer": "They provide a global plan of action to tackle major issues like climate change, inequality, hunger, poor education, and health. They help governments, businesses, and communities work toward a better future together."
+        },
+        {
+          "question": "Who is responsible for achieving the SDGs?",
+          "answer": "Everyone plays a role — governments, businesses, schools, charities, and individuals. Even small actions like saving energy, reducing waste, or supporting fair trade help contribute to the goals."
+        },
+        {
+          "question": "Are the SDGs legally binding for countries?",
+          "answer": "No, the SDGs are not legally binding, which means countries are not forced by law to follow them. However, they are encouraged to adopt the goals through national policies, development plans, and international cooperation. Many governments choose to report their progress publicly to stay accountable."
+        },
+        {
+          "question": "What happens if the SDGs are not achieved by 2030?",
+          "answer": "If the SDGs are not fully achieved by 2030, progress will still have been made, but many global problems like poverty, climate change, poor education, and inequality may continue to affect millions of people. The deadline is meant to encourage urgent action, but sustainability work will still continue beyond that date."
+        },
         {
           "question": "Why should I recycle?",
           "answer": "because its good for the planet"
@@ -78,20 +109,14 @@
     "main": [
       {
         "para": [
-          "Several breakthroughs in clean energy have been made over the past decade. In China the S1500 has been developed, this is a 13-story tall zeppelin like craft housing 12 generator units capturing 17MW of energy per year. To put the full 17MW of energy into perspective, that is the equivalent of 25185 UK households for a full year. Moreover, to power all UK households you would need a mere 1135 of these wind turbines. These turbines float between 500 and 10000 meters up, allowing it to operate at altitudes of much higher wind speeds. The report suggests that this breakthrough could “usher in a new age of renewable power generation. Furthermore, it takes far less material cost to implement these turbines for the power generation due to these higher wind speeds and the turbines can be placed much further out at sea than fixed bottom turbines allowing utilisation of 500% of the area that fixed bottom turbines can access according to the Global Wind Energy Council. This is a major breakthrough in green energy technology as the elevated altitudes allows for greater windspeed to be captured and converted into energy.",
-          "To name another breakthrough in the sector. Scientist Carvey Ehren Maigue, is in the process of engineering a bioluminescent solar cell which can capture more light than a regular solar panel. This is because bioluminescence converts UV light into visible light meaning that a solar panel with a bioluminescent film over the top can harvest both visible and UV light. Moreover, the film can have light receptors on the sides meaning it can be applied in windows to capture even more energy and be used as if it were a stain glass window (see below). "
+          "Several breakthroughs in clean energy have been made over the past decade. In China the S1500 has been developed, this is a 13-story tall zeppelin like craft housing 12 generator units capturing 17MW of energy per year. To put the full 17MW of energy into perspective, that is the equivalent of 25185 UK households for a full year. Moreover, to power all UK households you would need a mere 1135 of these wind turbines. These turbines float between 500 and 10000 meters up, allowing it to operate at altitudes of much higher wind speeds. The report suggests that this breakthrough could “usher in a new age of renewable power generation.",
+          "To name another breakthrough in the sector. Scientist Carvey Ehren Maigue, is in the process of engineering a bioluminescent solar cell which can capture more light than a regular solar panel."
         ],
-        "image": [
-          "/assets/windTurbine.jpg",
-          "/assets/bioPanels.jpg"
-        ],
-        "alt": [
-          "Floating turbine",
-          "Bioluminescent solar panels"
-        ]
+        "image": ["/assets/windTurbine.jpg", "/assets/bioPanels.jpg"],
+        "alt": ["Floating turbine", "Bioluminescent solar panels"]
       }
     ],
-    "goalFooter": [ 
+    "goalFooter": [
       {
         "display": "UN Energy Goals Page",
         "link": "https://sdgs.un.org/goals/goal7"
@@ -110,21 +135,15 @@
     "main": [
       {
         "para": [
-          "Seas, oceans, rivers cover 70 percent of our planet providing food, water and energy. Oceans alone make up over 96% of all the water on Earth. It is a well known fact that oceans also are a major contributor to absorbing 30-50% of the CO2 in the environment, a key source of reducing greenhouse gases in the ozone layer. The preservation of our oceans is a vital requirement for a safe and livable Earth.",
-          "Though scientists have officially discovered around 240,000 species, it is estimated that the true number of species living underwater could be 2.2 million, almost ten times more than the recorded ocean census. The biggest present threats to life in our oceans are climate change and pollution. Over 8 million metric tons of plastic yearly end up in our oceans killing and endangering millions of animals yearly. It is imperative we work collectively to minimise the impact of plastics in our environment.",
-          "Several breakthroughs in clean energy have been made over the past decade. In China the S1500 has been developed, this is a 13-story tall zeppelin-like craft housing 12 generator units each rated at 100kW of energy. This is a grand breakthrough in green energy technology as the elevated altitudes allow for greater windspeed to be captured and converted into energy."
+          "Seas, oceans, rivers cover 70 percent of our planet providing food, water and energy.",
+          "Though scientists have officially discovered around 240,000 species, it is estimated that the true number of species living underwater could be 2.2 million.",
+          "Several breakthroughs in clean energy have been made over the past decade."
         ],
-        "image": [
-          "/assets/dolphin.jpg",
-          "/assets/fins.jpg"
-        ],
-        "alt": [
-          "Dolphin",
-          "Dolphin pod"
-        ]
+        "image": ["/assets/dolphin.jpg", "/assets/fins.jpg"],
+        "alt": ["Dolphin", "Dolphin pod"]
       }
     ],
-    "goalFooter": [ 
+    "goalFooter": [
       {
         "display": "UN Life Below Water Goals Page",
         "link": "https://sdgs.un.org/goals/goal14"
@@ -146,15 +165,11 @@
           "Healthy land protects biodiversity and supports the communities that depend on it.",
           "Reforestation and regenerative agriculture fight erosion, improve food security, and restore ecosystems."
         ],
-        "image": [
-          "/assets/trees.jpg"
-        ],
-        "alt": [
-          "River flowing through forest"
-        ]
+        "image": ["/assets/trees.jpg"],
+        "alt": ["River flowing through forest"]
       }
     ],
-    "goalFooter": [ 
+    "goalFooter": [
       {
         "display": "UN Life On Land Goals Page",
         "link": "https://sdgs.un.org/goals/goal15"
