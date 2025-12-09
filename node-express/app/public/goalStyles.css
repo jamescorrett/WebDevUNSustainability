@@ -1,133 +1,133 @@
-/*currently displays an image, will change to fit name when video is found*/
-
-
-.video{
-    position: relative;
-    display: block;
-    place-items: center;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 0 1.5rem 0;
-    box-sizing: border-box;
-    height: 10%;
-    overflow: auto;
-    box-sizing: border-box;
+.video {
+  position: relative;
+  display: block;
+  place-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0 1.5rem 0;
+  box-sizing: border-box;
+  height: 10%;
+  overflow: auto;
 }
+
 .video video {
-    width: 100%;
-    aspect-ratio: 8 / 3;
-    display: block;
-    object-fit: cover;
+  width: 100%;
+  aspect-ratio: 8 / 3;
+  display: block;
+  object-fit: cover;
 }
+
 #video article {
-    position: absolute;
-    inset: 0;
-    display: grid;
-    place-items: center;
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    pointer-events: none;
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  pointer-events: none;
 }
 
 footer {
-    text-align: center;
-    font-family: 'Roboto Condensed', Arial, sans-serif;
-    font-size: 1.5em;
-    color: #575757;
+  text-align: center;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  font-size: 1.5em;
+  color: #575757;
 }
 
-/*the main body of the goals pages*/
 .main {
-    padding: 0rem 1rem 1rem;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    row-gap: 0.8em;
-    align-items: center;
+  padding: 0rem 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 0.8em;
+  align-items: center;
 }
 
 .textBox {
-    min-width: 55%;
-    max-width: 55%;
-    overflow: auto;
-    font-size: 1.5em;
-    text-align: center;
-    font-family: 'Roboto Condensed', Arial, sans-serif;
-    color: #3b3b3b;
+  min-width: 55%;
+  max-width: 55%;
+  overflow: auto;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  color: #3b3b3b;
 }
 
 .imgBox {
-    place-items: center;
-    width: 90%;
-    height: 90%;
-    font-size: 4em;
-    text-align: center;
+  place-items: center;
+  width: 90%;
+  height: 90%;
+  font-size: 4em;
+  text-align: center;
 }
 
 .imgBox img {
-    width: 80%;
-    height: 80%;
-    display: block;
-    object-fit: fill;
+  width: 80%;
+  height: 80%;
+  display: block;
+  object-fit: fill;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 .hidden {
-    opacity: 0;
-    transform: translateX(16px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+  opacity: 1;
+  transform: none;
 }
-.show {
-    opacity: 1;
-    transform: translateX(0);
+
+.js-enabled .hidden {
+  opacity: 0;
+  transform: translateX(16px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.js-enabled .show {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 footer a {
-    border-style: solid;
-    border-color: dodgerblue;
-    border-radius: 1em;
-    padding: 0.5em;
-
-    color: dodgerblue;
-    text-decoration: none;
-    font-family: 'Roboto Condensed', Arial, sans-serif;
+  border-style: solid;
+  border-color: dodgerblue;
+  border-radius: 1em;
+  padding: 0.5em;
+  color: dodgerblue;
+  text-decoration: none;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
 }
 
 footer a:hover {
-    border-style: solid;
-    border-color: dodgerblue;
-    border-radius: 1em;
-    padding: 0.5em;
-
-    color: white;
-    background-color: dodgerblue;
-    text-decoration: none;
-    font-family: 'Roboto Condensed', Arial, sans-serif;
+  border-style: solid;
+  border-color: dodgerblue;
+  border-radius: 1em;
+  padding: 0.5em;
+  color: white;
+  background-color: dodgerblue;
+  text-decoration: none;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
 }
 
-@media (max-width:768px) {
-    .textBox{
-        min-width: 85%;
-        max-width: 85%;
-        font-size: 1em;
-    }
-    .imgBox {
-        min-height: 80%;
-        margin: 5%;
-    }
+@media (max-width: 768px) {
+  .textBox {
+    min-width: 85%;
+    max-width: 85%;
+    font-size: 1em;
+  }
+
+  .imgBox {
+    min-height: 80%;
+    margin: 5%;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-.hidden {
-    opacity: 0;
-    transform: translateX(0);
-    transition: all 1s;
-}
-
-.show {
+  .js-enabled .hidden,
+  .js-enabled .show {
     opacity: 1;
-    transform: translateX(0);
-}
+    transform: none;
+    transition: none;
+  }
 }

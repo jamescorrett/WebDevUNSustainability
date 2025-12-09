@@ -1,3 +1,5 @@
+document.documentElement.classList.add("js-enabled");
+
 document.addEventListener("DOMContentLoaded", () => {
   let currentPath = window.location.pathname.split("/").pop();
   if (currentPath === "") {
@@ -7,12 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch("data.json")
     .then((response) => response.json())
     .then((responseData) => {
-
       var page = document.body.dataset.page;
 
-      //top row
       const videoElement = document.getElementById("video");
       const video = document.createElement("video");
+
       if (page === "energy") {
         video.src = responseData.energy.video[0].videoSRC;
       } else if (page === "water") {
@@ -20,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
       } else if (page === "land") {
         video.src = responseData.land.video[0].videoSRC;
       }
+
       video.controls = false;
       video.autoplay = true;
       video.muted = true;
@@ -29,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const title = document.createElement("article");
       videoElement.appendChild(title);
+
       if (page === "energy") {
         title.textContent = responseData.energy.video[0].title;
       } else if (page === "water") {
@@ -37,17 +40,18 @@ document.addEventListener("DOMContentLoaded", () => {
         title.textContent = responseData.land.video[0].title;
       }
 
-      //Appends data from json into main section textBox elements
       const mainSection = document.getElementById("main");
       var children = mainSection.children;
       var x = 0;
       var y = 0;
+
       for (var i = 0; i < children.length; i++) {
         var tableChild = children[i];
-        if (tableChild.classList.contains("textBox")) 
-        {
+
+        if (tableChild.classList.contains("textBox")) {
           const para = document.createElement("p");
           tableChild.appendChild(para);
+
           if (page === "energy") {
             para.textContent = responseData.energy.main[0].para[x];
           } else if (page === "water") {
@@ -56,11 +60,10 @@ document.addEventListener("DOMContentLoaded", () => {
             para.textContent = responseData.land.main[0].para[x];
           }
           x++;
-        }
-        else if (tableChild.classList.contains("imgBox")) 
-        {
+        } else if (tableChild.classList.contains("imgBox")) {
           const img = document.createElement("img");
           tableChild.appendChild(img);
+
           if (page === "energy") {
             img.src = responseData.energy.main[0].image[y];
             img.alt = responseData.energy.main[0].alt[y];
@@ -73,12 +76,14 @@ document.addEventListener("DOMContentLoaded", () => {
           }
           y++;
         }
+
         tableChild.classList.add("hidden");
       }
 
       const foot = document.getElementById("footer");
       const footElement = document.createElement("a");
       foot.appendChild(footElement);
+
       if (page === "energy") {
         footElement.textContent = responseData.energy.goalFooter[0].display;
         footElement.href = responseData.energy.goalFooter[0].link;
@@ -90,23 +95,18 @@ document.addEventListener("DOMContentLoaded", () => {
         footElement.href = responseData.land.goalFooter[0].link;
       }
 
-      //intersectobserve test
-      // Intersection Observer setup
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              entry.target.classList.add("show"); // add fade-in class
+              entry.target.classList.add("show");
             }
           });
         },
-        {
-          threshold: 0.2, // triggers when 20% of element is visible
-        }
+        { threshold: 0.2 }
       );
 
-      // select all elements with the hidden class
       const hiddenElements = document.querySelectorAll(".hidden");
       hiddenElements.forEach((el) => observer.observe(el));
     });
-})
+});
