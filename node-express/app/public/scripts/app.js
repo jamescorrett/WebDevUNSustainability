@@ -38,8 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const page = document.body.dataset.page; // content specific for pages (body page-data ="pagename")
       const nav = document.getElementById("navBar");
 
-      const nav = document.querySelector("nav");
-
       document.addEventListener("mousewheel", function (event) {
         if (event.wheelDelta >= 0 && nav.classList != "showNav") {
           nav.classList.remove("postScroll");
