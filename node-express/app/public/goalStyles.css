@@ -118,3 +118,16 @@ footer a:hover {
         margin: 5%;
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+.hidden {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+}
