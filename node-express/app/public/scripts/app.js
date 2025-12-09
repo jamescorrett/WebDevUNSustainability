@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         navUl.appendChild(navList);
       }
 
-      const nav = document.getElementById("navBar")
+      const page = document.body.dataset.page;
 
       document.addEventListener("mousewheel", function(event)
       {
@@ -70,57 +70,23 @@ document.addEventListener("DOMContentLoaded", () => {
         const ConfirmMessageElement = document.getElementById("ConfirmMessage");
         ConfirmMessageElement.textContent = responseData.form[0].ConfirmMessage;
       }
-        
-          myForm.addEventListener('submit', (e) => {
-          //e.preventDefault();
-          ConfirmMessage.textContent = `Hi ${Name.value}, your message has been
-          received, we will contact you at ${email.value}`;
-          e.preventDefault();
-          const FormData = {
-          name: Name.value,
-          lastname: lastname.value,
-          email: email.value,
-          message: Comments.value,
-          };
 
-        const paraConfirmation = document.getElementById('Confirmation')
-   
-        fetch("/form", {
-          method: 'POST',
-          headers: {"Content-Type" : "application/json" },
-          body: JSON.stringify(FormData),
-          
-        })
-      .then(res => res.json() )
-      .then((responsedata) => {
-        console.log(responsedata);
-        paraConfirmation.textContent=`Hi ${responsedata.name}, your message
-        has been received, we will contact you at ${responsedata.email}`;
-      })
-    .catch(err => {
-        console.error(err);
-    })
-   })
+      if (page === "team") {
+      }
 
-
-     
-
-      //intersectobserve test
-      // Intersection Observer setup
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              entry.target.classList.add("show"); // add fade-in class
+              entry.target.classList.add("show");
             }
           });
         },
         {
-          threshold: 0.2, // triggers when 20% of element is visible
+          threshold: 0.2,
         }
       );
 
-      // select all elements with the hidden class
       const hiddenElements = document.querySelectorAll(".hidden");
       hiddenElements.forEach((el) => observer.observe(el));
     }); 

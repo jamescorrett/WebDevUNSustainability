@@ -15,63 +15,62 @@ document.addEventListener("DOMContentLoaded", () => {
           let currentAudio = null;
 
           members.forEach((member) => {
-            const card = document.createElement("article");
-            card.className = "team-member hidden";
-
+          const card = document.createElement("article");
+          card.className = "team-member hidden";
             
-            const imageWrapper = document.createElement("div");
-            imageWrapper.className = "team-image-wrapper";
+          const imageWrapper = document.createElement("div");
+          imageWrapper.className = "team-image-wrapper";
 
-            const img = document.createElement("img");
-            img.className = "team-photo";
-            img.src = member.image;
-            img.alt = member.name || "Team member";
+          const img = document.createElement("img");
+          img.className = "team-photo";
+          img.src = member.image;
+          img.alt = member.name || "Team member";
 
-            const name = document.createElement("h3");
-            name.className = "team-name";
-            name.textContent = member.name;
+          const name = document.createElement("h3");
+          name.className = "team-name";
+          name.textContent = member.name;
 
-            const overlay = document.createElement("div");
-            overlay.className = "team-overlay";
+          const overlay = document.createElement("div");
+          overlay.className = "team-overlay";
 
-            const overlayText = document.createElement("p");
-            overlayText.className = "team-overlay-text";
-            overlayText.textContent = member.description;
-            overlay.appendChild(overlayText);
+          const overlayText = document.createElement("p");
+          overlayText.className = "team-overlay-text";
+          overlayText.textContent = member.description;
+          overlay.appendChild(overlayText);
 
-            const audio = new Audio(member.song);
+          const audio = new Audio(member.song);
 
-            imageWrapper.addEventListener("mouseenter", () => {
-              imageWrapper.classList.add("hovered");
+          imageWrapper.addEventListener("mouseenter", () => {
+          imageWrapper.classList.add("hovered");
 
-              if (currentAudio && currentAudio !== audio) {
-                currentAudio.pause();
-                currentAudio.currentTime = 0;
-              }
+          if (currentAudio && currentAudio !== audio) {
+            currentAudio.pause();
+            currentAudio.currentTime = 0;
+          }
 
-              currentAudio = audio;
-              audio.currentTime = 0;
-              audio.play().catch(() => {
-              });
-            });
+          currentAudio = audio;
+          audio.currentTime = 0;
+          audio.play().catch(() => {
+          });
+          });
 
-            imageWrapper.addEventListener("mouseleave", () => {
-              imageWrapper.classList.remove("hovered");
+          imageWrapper.addEventListener("mouseleave", () => {
+          imageWrapper.classList.remove("hovered");
 
-              audio.pause();
-              audio.currentTime = 0;
-              if (currentAudio === audio) {
-                currentAudio = null;
-              }
-            });
+          audio.pause();
+          audio.currentTime = 0;
+          if (currentAudio === audio) {
+            currentAudio = null;
+          }
+          });
 
-            imageWrapper.appendChild(img);
-            imageWrapper.appendChild(overlay);
+          imageWrapper.appendChild(img);
+          imageWrapper.appendChild(overlay);
 
-            card.appendChild(imageWrapper);
-            card.appendChild(name);
+          card.appendChild(imageWrapper);
+          card.appendChild(name);
 
-            teamSection.appendChild(card);
+          teamSection.appendChild(card);
           });
         }
       }
