@@ -1,37 +1,37 @@
 {
   "nav": [
-    { "linkText": "home", "url": "index.html" },
-    { "linkText": "energy", "url": "energy.html" },
-    { "linkText": "water", "url": "water.html" },
-    { "linkText": "land", "url": "land.html" },
-    { "linkText": "team", "url": "team.html" },
-    { "linkText": "get Involved", "url": "join.html" }
+    { "linkText": "HOME", "url": "index.html" },
+    { "linkText": "ENERGY", "url": "energy.html" },
+    { "linkText": "WATER", "url": "water.html" },
+    { "linkText": "LAND", "url": "land.html" },
+    { "linkText": "TEAM", "url": "team.html" },
+    { "linkText": "GET INVOLVED", "url": "join.html" }
   ],
 
-  "teamMembers": [
+"teamMembers": [
     {
-      "linkText": "HOME",
-      "url": "index.html"
+      "name": "James",
+      "image": "/assets/james.jpg",
+      "song": "/assets/james.mp3",
+      "description": "Contributions - Home page video + overlay, Land page, Team page, Github hosting"
     },
     {
-      "linkText": "ENERGY",
-      "url": "energy.html"
+      "name": "Tristan",
+      "image": "/assets/tristan.jpg",
+      "song": "/assets/tristan.mp3",
+      "description": "Contributions - Energy page, Mobile navigation"
     },
     {
-      "linkText": "WATER",
-      "url": "water.html"
+      "name": "Jacob",
+      "image": "/assets/jacob.jpg",
+      "song": "/assets/jacob.mp3",
+      "description": "Contributions - Initiated file layout, HTML Structure, Home page, Github merging, Team leader role"
     },
     {
-      "linkText": "LAND",
-      "url": "land.html"
-    },
-    {
-      "linkText": "TEAM",
-      "url": "team.html"
-    },
-    {
-      "linkText": "GET INVOLVED",
-      "url": "join.html"
+      "name": "Jerome",
+      "image": "/assets/jerome.jpg",
+      "song": "/assets/jerome.mp3",
+      "description": "Contributions - Water page, Sign up form"
     }
   ],
 
@@ -67,20 +67,44 @@
     }
   },
 
-  "water": {
-    "video": [
-      {
-        "title": "water",
-        "image": "/assets/placeholder.jpg"
-      }
-    ]
-  },
-
   "energy": {
     "video": [
       {
         "title": "ENERGY",
-        "image": "/assets/placeholder.png"
+        "videoSRC": "/assets/energyVid.mp4",
+        "alt": "Wind turbines"
+      }
+    ],
+    "main": [
+      {
+        "para": [
+          "Several breakthroughs in clean energy have been made over the past decade. In China the S1500 has been developed, this is a 13-story tall zeppelin like craft housing 12 generator units capturing 17MW of energy per year. To put the full 17MW of energy into perspective, that is the equivalent of 25185 UK households for a full year. Moreover, to power all UK households you would need a mere 1135 of these wind turbines. These turbines float between 500 and 10000 meters up, allowing it to operate at altitudes of much higher wind speeds. The report suggests that this breakthrough could “usher in a new age of renewable power generation. Furthermore, it takes far less material cost to implement these turbines for the power generation due to these higher wind speeds and the turbines can be placed much further out at sea than fixed bottom turbines allowing utilisation of 500% of the area that fixed bottom turbines can access according to the Global Wind Energy Council. This is a major breakthrough in green energy technology as the elevated altitudes allows for greater windspeed to be captured and converted into energy.",
+          "To name another breakthrough in the sector. Scientist Carvey Ehren Maigue, is in the process of engineering a bioluminescent solar cell which can capture more light than a regular solar panel. This is because bioluminescence converts UV light into visible light meaning that a solar panel with a bioluminescent film over the top can harvest both visible and UV light. Moreover, the film can have light receptors on the sides meaning it can be applied in windows to capture even more energy and be used as if it were a stain glass window (see below). "
+        ],
+        "image": [
+          "/assets/windTurbine.jpg",
+          "/assets/bioPanels.jpg"
+        ],
+        "alt": [
+          "Floating turbine",
+          "Bioluminescent solar panels"
+        ]
+      }
+    ],
+    "goalFooter": [ 
+      {
+        "display": "UN Energy Goals Page",
+        "link": "https://sdgs.un.org/goals/goal7"
+      }
+    ]
+  },
+
+  "water": {
+    "video": [
+      {
+        "title": "WATER",
+        "videoSRC": "/assets/swimming.mp4",
+        "alt": "Turtles swimming"
       }
     ],
     "main": [
@@ -92,10 +116,18 @@
         ],
         "image": [
           "/assets/dolphin.jpg",
-          "/assets/fins.jpg",
-          "/assets/placeholder.png",
-          "/assets/placeholder.png"
+          "/assets/fins.jpg"
+        ],
+        "alt": [
+          "Dolphin",
+          "Dolphin pod"
         ]
+      }
+    ],
+    "goalFooter": [ 
+      {
+        "display": "UN Life Below Water Goals Page",
+        "link": "https://sdgs.un.org/goals/goal14"
       }
     ]
   },
@@ -104,7 +136,8 @@
     "video": [
       {
         "title": "LAND",
-        "image": "/assets/trees.jpg"
+        "videoSRC": "/assets/treesvideo.mp4",
+        "alt": "Forest"
       }
     ],
     "main": [
@@ -112,7 +145,19 @@
         "para": [
           "Healthy land protects biodiversity and supports the communities that depend on it.",
           "Reforestation and regenerative agriculture fight erosion, improve food security, and restore ecosystems."
+        ],
+        "image": [
+          "/assets/trees.jpg"
+        ],
+        "alt": [
+          "River flowing through forest"
         ]
+      }
+    ],
+    "goalFooter": [ 
+      {
+        "display": "UN Life On Land Goals Page",
+        "link": "https://sdgs.un.org/goals/goal15"
       }
     ]
   },
